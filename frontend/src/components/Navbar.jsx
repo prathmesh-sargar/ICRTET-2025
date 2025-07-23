@@ -26,12 +26,15 @@ export default function Navbar({ activeSection, scrollToSection }) {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          <Link to={"/"}>
           <div className="flex items-center space-x-2">
+
             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">IC</span>
             </div>
-            <Link to={"/"} ><span className="font-bold text-gray-900 hidden sm:block">ICRTET 2025</span></Link>
+            <span className="font-bold text-gray-900 hidden sm:block">ICRTET 2025</span>
           </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
