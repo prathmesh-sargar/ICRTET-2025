@@ -39,15 +39,7 @@ export default function Hero() {
               <span className="font-medium">DYPCET, Kolhapur</span>
             </div>
           </div>
-          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            Organized by D. Y. Patil College of Engineering & Technology,
-            Kolhapur
-            <br />
-            <span className="font-semibold">
-              In collaboration with AICTE and Elsevier
-            </span>
-          </p>
-         <marquee className="p-2" behavior="scroll" direction="left">
+             <marquee className="p-2" behavior="scroll" direction="left">
   <div className="text-black text-lg">
     <span className="font-bold text-xl text-blue-600">“</span>
     The Microsoft CMT service was used for managing the peer-reviewing
@@ -57,8 +49,15 @@ export default function Hero() {
     <span className="font-bold text-xl text-blue-600">”</span>
   </div>
 </marquee>
-
-          <br /><br />
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            Organized by D. Y. Patil College of Engineering & Technology,
+            Kolhapur
+            <br />
+            <span className="font-semibold">
+              In collaboration with AICTE and Elsevier
+            </span>
+          </p>
+      
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={"submit-paper"}>
               <Button
