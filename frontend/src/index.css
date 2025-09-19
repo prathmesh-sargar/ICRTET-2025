@@ -118,3 +118,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+#cmt-ack {
+  position: absolute;
+  left: -9999px; /* keeps it in the DOM but off-screen */
+}

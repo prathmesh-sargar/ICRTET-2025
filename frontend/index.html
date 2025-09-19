@@ -5,9 +5,27 @@
     <link rel="icon" type="image/png" href="/conference.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ICRTET 2025</title>
+    <style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
   </head>
   <body>
     <div id="root"></div>
+    <p class="visually-hidden" id="cmt-ack">
+  The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+  This service was provided for free by Microsoft and they bore all expenses,
+  including costs for Azure cloud services as well as for software development and support.
+</p>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
