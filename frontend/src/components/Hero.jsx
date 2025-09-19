@@ -47,14 +47,17 @@ export default function Hero() {
               In collaboration with AICTE and Elsevier
             </span>
           </p>
-          <marquee className=" text-white font-semibold italic bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 p-1.5" behavior="" direction="">
-          <div >
-            " The Microsoft CMT service was used for managing the peer-reviewing
-            process for this conference. This service was provided for free by
-            Microsoft and they bore all expenses, including costs for Azure
-            cloud services as well as for software development and support. "
-          </div>
-          </marquee>
+         <marquee className="p-2" behavior="scroll" direction="left">
+  <div className="text-black text-lg">
+    <span className="font-bold text-xl text-blue-600">“</span>
+    The Microsoft CMT service was used for managing the peer-reviewing
+    process for this conference. This service was provided for free by
+    Microsoft and they bore all expenses, including costs for Azure
+    cloud services as well as for software development and support.
+    <span className="font-bold text-xl text-blue-600">”</span>
+  </div>
+</marquee>
+
           <br /><br />
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={"submit-paper"}>
