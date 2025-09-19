@@ -47,7 +47,7 @@ export default function Hero() {
               In collaboration with AICTE and Elsevier
             </span>
           </p>
-          <marquee className="font-semibold italic bg-blue-300 p-1.5" behavior="" direction="">
+          <marquee className=" text-white font-semibold italic bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 p-1.5" behavior="" direction="">
           <div >
             " The Microsoft CMT service was used for managing the peer-reviewing
             process for this conference. This service was provided for free by
