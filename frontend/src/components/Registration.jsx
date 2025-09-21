@@ -3,10 +3,9 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Registration() {
   const registrationData = [
-    { category: "UG/PG Students", fee: "₹5,000/-", inclusions: "Kit, Lunch, Certificate" },
-    { category: "Academicians", fee: "₹5,000/-", inclusions: "Kit, Lunch, Certificate" },
-    { category: "Industry Delegates", fee: "₹6,000/-", inclusions: "Kit, Lunch, Certificate" },
-    { category: "International Authors", fee: "$100", inclusions: "Kit, Lunch, Certificate" },
+    { category: "UG/PG Students/Academicians", fee: "₹3,500/-", fees_dollar: "$40" },
+    { category: "Industry Delegates", fee: "₹4,000/-", fees_dollar: "$46" },
+    { category: "International Authors", fee: "₹5,000/-", fees_dollar: "$57" },
   ]
 
   return (
@@ -24,8 +23,8 @@ export default function Registration() {
                   <thead className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
                     <tr>
                       <th className="px-6 py-4 text-left font-semibold">Category</th>
-                      <th className="px-6 py-4 text-left font-semibold">Fee</th>
-                      <th className="px-6 py-4 text-left font-semibold">Inclusions</th>
+                      <th className="px-6 py-4 text-left font-semibold">Fees</th>
+                      <th className="px-6 py-4 text-left font-semibold">Fees in Dollars</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
@@ -33,7 +32,7 @@ export default function Registration() {
                       <tr key={index} className="hover:bg-gray-50">
                         <td className="px-6 py-4 font-medium text-gray-900">{row.category}</td>
                         <td className="px-6 py-4 text-blue-600 font-bold">{row.fee}</td>
-                        <td className="px-6 py-4 text-gray-600">{row.inclusions}</td>
+                        <td className="px-6 py-4 text-gray-600">{row.fees_dollar}</td>
                       </tr>
                     ))}
                   </tbody>
