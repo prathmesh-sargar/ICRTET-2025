@@ -3,11 +3,10 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function ImportantDates() {
   const importantDatesData = [
-    { event: "Brochure Confirmation", date: "25 July 2025", status: "upcoming" },
-    { event: "Abstract Submission", date: "6 September 2025", status: "upcoming" },
-    { event: "Full Paper Submission", date: "27 September 2025", status: "upcoming" },
-    { event: "Notification of Acceptance", date: "25 October 2025", status: "upcoming" },
-    { event: "Registration Deadline", date: "8 November 2025", status: "upcoming" },
+   
+    { event: "Full Paper Submission", date: "10 October 2025", status: "upcoming" },
+    { event: "Notification of Acceptance", date: "28 October 2025", status: "upcoming" },
+    { event: "Camera Ready paper & Registration Deadline", date: "8 November 2025", status: "upcoming" },
     { event: "Conference Dates", date: "19–20 December 2025", status: "highlight" },
   ]
 
@@ -22,16 +21,16 @@ export default function ImportantDates() {
           {importantDatesData.map((item, index) => (
             <Card
               key={index}
-              className={`${item.status === "highlight" ? "bg-gradient-to-br from-blue-600 to-purple-600 text-white" : "bg-white"} hover:shadow-lg transition-shadow duration-300`}
+              className={${item.status === "highlight" ? "bg-gradient-to-br from-blue-600 to-purple-600 text-white" : "bg-white"} hover:shadow-lg transition-shadow duration-300}
             >
               <CardContent className="p-6">
                 <div className="flex items-center space-x-3 mb-3">
-                  <Calendar className={`h-5 w-5 ${item.status === "highlight" ? "text-white" : "text-blue-600"}`} />
-                  <h3 className={`font-semibold ${item.status === "highlight" ? "text-white" : "text-gray-900"}`}>
+                  <Calendar className={h-5 w-5 ${item.status === "highlight" ? "text-white" : "text-blue-600"}} />
+                  <h3 className={font-semibold ${item.status === "highlight" ? "text-white" : "text-gray-900"}}>
                     {item.event}
                   </h3>
                 </div>
-                <p className={`text-lg font-bold ${item.status === "highlight" ? "text-white" : "text-blue-600"}`}>
+                <p className={text-lg font-bold ${item.status === "highlight" ? "text-white" : "text-blue-600"}}>
                   {item.date}
                 </p>
               </CardContent>
