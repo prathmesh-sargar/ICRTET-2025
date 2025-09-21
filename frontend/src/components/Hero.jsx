@@ -59,7 +59,7 @@ export default function Hero() {
           </p>
       
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to={"submit-paper"}>
+            <Link to={"https://hosturl.site/fTtnX2"}>
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
@@ -75,7 +75,7 @@ export default function Hero() {
           </div>
           <div className="mt-12">
             <img
-              src="/placeholder.svg?height=100&width=100"
+              src="/QR.jpg"
               alt="Registration QR Code"
               className="mx-auto h-24 w-24"
             />
