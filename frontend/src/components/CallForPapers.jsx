@@ -1,6 +1,7 @@
 import { BookOpen, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Link } from "react-router-dom"
 
 export default function CallForPapers() {
   return (
@@ -21,34 +22,60 @@ export default function CallForPapers() {
                   work for presentation at ICRTET 2025.
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Submission Guidelines</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Original and unpublished research</li>
-                    <li>• IEEE format for full papers</li>
-                    <li>• Maximum 6 pages including references</li>
-                    <li>• Plagiarism check mandatory</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">Review Process</h4>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Double-blind peer review</li>
-                    <li>• Expert panel evaluation</li>
-                    <li>• Feedback provided to authors</li>
-                    <li>• Acceptance notification by Oct 25</li>
-                  </ul>
-                </div>
+              <div className="space-y-8 text-left">
+                <h4 className="font-semibold text-gray-900 text-lg">Submission Guidelines</h4>
+                <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Abstract: 300–400 words on the second page of the main paper.</li>
+                  <li>Keywords: 4–6 words listed below the abstract.</li>
+                  <li>Figures, Tables & Charts: Number sequentially, cite in text, and place after references.</li>
+                  <li>References: Follow APA citation style, arranged alphabetically.</li>
+                </ul>
+
+                <h4 className="font-semibold text-gray-900 text-lg">Conflict of Interest (COI)</h4>
+                <p className="text-gray-600">
+                  At the time of submission in CMT, authors must declare all conflicts of interest, including:
+                </p>
+                <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Current institution</li>
+                  <li>Past affiliations (last 3 years)</li>
+                </ul>
+
+                <h4 className="font-semibold text-gray-900 text-lg">Mode of Presentation</h4>
+                <p className="text-gray-600">
+                  The conference will be conducted in Hybrid Mode to facilitate participation from both national and
+                  international authors.
+                </p>
+                <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>
+                    <strong>Onsite Presentation:</strong> Authors can present their papers physically at the conference
+                    venue.
+                  </li>
+                  <li>
+                    <strong>Online Presentation:</strong> Authors who cannot travel may present virtually through the
+                    designated online platform.
+                  </li>
+                  <li>Authors must indicate their preferred mode of presentation at the time of registration.</li>
+                </ul>
+
+                <h4 className="font-semibold text-gray-900 text-lg">Review Process</h4>
+                <ul className="space-y-2 text-gray-600 list-disc list-inside">
+                  <li>Double-blind peer review</li>
+                  <li>Expert panel evaluation</li>
+                  <li>Feedback provided to authors</li>
+                  <li>Acceptance notification by Oct 28</li>
+                </ul>
               </div>
-              <div className="text-center">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Submit Your Paper
-                </Button>
+
+              <div className="text-center mt-10">
+                <Link to={"https://hosturl.site/fTtnX2"}>
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  >
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Submit Your Paper
+                  </Button>
+                </Link>
               </div>
             </CardContent>
           </Card>
