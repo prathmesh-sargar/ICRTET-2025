@@ -3,11 +3,12 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function ImportantDates() {
   const importantDatesData = [
-   
-    { event: "Full Paper Submission", date: "10 October 2025", status: "upcoming" },
-    { event: "Notification of Acceptance", date: "28 October 2025", status: "upcoming" },
-    { event: "Camera Ready paper & Registration Deadline", date: "8 November 2025", status: "upcoming" },
-    { event: "Conference Dates", date: "19–20 December 2025", status: "highlight" },
+    { event: "Full Paper Submission", date: "30 October 2025", status: "upcoming" },
+    { event: "Notification of Acceptance", date: "1 December 2025", status: "upcoming" },
+    { event: "Camera Ready Paper Submission", date: "10 December 2025", status: "upcoming" },
+    { event: "Early Bird Registration", date: "10 December 2025", status: "upcoming" },
+    { event: "Last Date of Registration", date: "20 December 2025", status: "upcoming" },
+    { event: "Conference Dates", date: "6-7 February 2026", status: "highlight" },
   ]
 
   return (
@@ -17,7 +18,7 @@ export default function ImportantDates() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Important Dates</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
         </div>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {importantDatesData.map((item, index) => (
             <Card
               key={index}
