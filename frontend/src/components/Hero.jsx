@@ -8,7 +8,7 @@ export default function Hero() {
     { src: "/springer.jpg", alt: "Springer" },
     { src: "Picture3.jpg", alt: "IEEE" },
     { src: "/Picture4.jpg", alt: "ACM" },
-    { src: "/Picture5.jpg", alt: "Wiley" },
+    // { src: "/Picture5.jpg", alt: "Wiley" },
     
   ];
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];
