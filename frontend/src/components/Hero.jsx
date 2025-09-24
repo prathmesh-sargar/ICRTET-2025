@@ -3,6 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const partnerLogos = [
+    { src: "/scopus.jpg", alt: "Elsevier" },
+    { src: "/springer.jpg", alt: "Springer" },
+    { src: "Picture3.jpg", alt: "IEEE" },
+    { src: "/Picture4.jpg", alt: "ACM" },
+    { src: "/Picture5.jpg", alt: "Wiley" },
+    
+  ];
+  const duplicatedLogos = [...partnerLogos, ...partnerLogos];
+
   return (
     <section
       id="home"
@@ -19,7 +29,7 @@ export default function Hero() {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              ICRTET 2025
+              ICRTET 2026
             </span>
             <div className="text-lg md:text-xl font-normal text-gray-600 mt-2">
               10th Edition
@@ -51,13 +61,32 @@ export default function Hero() {
 </marquee>
           <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
             Organized by D. Y. Patil College of Engineering & Technology,
-            Kolhapur
+            Kolhapur, Maharashtra, India.
             <br />
             <span className="font-semibold">
-              In collaboration with AICTE and Elsevier
+              In collaboration with AICTE, New Delhi
             </span>
           </p>
-      
+
+          <div className="mt-12 mb-12">
+            <h3 className="text-lg font-semibold text-gray-600 mb-6">Our Publishing Partners</h3>
+            <div className="relative w-full overflow-hidden">
+              <div className="flex animate-marquee">
+                {duplicatedLogos.map((logo, index) => (
+                  <div key={index} className="flex-shrink-0 w-48 mx-6 flex items-center justify-center">
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="absolute top-0 left-0 w-24 h-full bg-gradient-to-r from-purple-50 to-transparent"></div>
+              <div className="absolute top-0 right-0 w-24 h-full bg-gradient-to-l from-purple-50 to-transparent"></div>
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={"https://hosturl.site/fTtnX2"}>
               <Button
