@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
             <div className="flex items-center space-x-2 text-gray-600">
               <Calendar className="h-5 w-5" />
-              <span className="font-medium">19–20 December 2025</span>
+              <span className="font-medium">6th and 7th February </span>
             </div>
             <div className="flex items-center space-x-2 text-gray-600">
               <MapPin className="h-5 w-5" />
