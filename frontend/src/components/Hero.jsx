@@ -24,7 +24,7 @@ export default function Hero() {
             <img
               src="/logo.png?height=120&width=120"
               alt="ICRTET 2025 Logo"
-              className="mx-auto h-37 w-37 mb-6"
+              className="mx-auto h-50 w-50 mb-6"
             />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
